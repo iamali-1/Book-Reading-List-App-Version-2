@@ -1,0 +1,34 @@
+/* BookList.css */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-container {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.book-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-button, .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    color: #888;
+    transition: color 0.3s;
+}
+
+.edit-button:hover, .delete-button:hover {
+    color: #333;
+}
